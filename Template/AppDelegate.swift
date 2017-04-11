@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Template
 //
-//  Created by Sierra Kaplan-Nelson on 4/3/17.
+//  Created by Brandon Harris on 4/3/17.
 //  Copyright © 2017 StreetCode. All rights reserved.
 //
 
