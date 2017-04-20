@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7UH-iD-HM5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZCW-OM-8Gl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,6 +13,7 @@
         <scene sceneID="IOa-zF-oC5">
             <objects>
                 <tabBarController id="7UH-iD-HM5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rOc-KJ-eLv"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7Oe-Gi-tSB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -41,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="129"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pCm-ny-1YB" id="KQK-Rx-DRq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty-lot" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-Uz-ySR">
@@ -92,6 +93,22 @@ East Palo Alto, CA 94303</string>
             </objects>
             <point key="canvasLocation" x="-874" y="588"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7z4-ih-5JN">
+            <objects>
+                <navigationController id="ZCW-OM-8Gl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U0s-Op-Y72">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7UH-iD-HM5" kind="relationship" relationship="rootViewController" id="LU6-Xt-O8e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMm-pe-vk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2244" y="-177"/>
+        </scene>
         <!--Map View-->
         <scene sceneID="zyU-p4-qck">
             <objects>
@@ -129,10 +146,10 @@ East Palo Alto, CA 94303</string>
             </objects>
             <point key="canvasLocation" x="54" y="588"/>
         </scene>
-        <!--View Controller-->
+        <!--Lots For Rent-->
         <scene sceneID="MlH-NS-EcP">
             <objects>
-                <viewController id="xFD-2G-Rcm" sceneMemberID="viewController">
+                <viewController id="xFD-2G-Rcm" customClass="lotsForRent" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3bf-jd-EW4"/>
                         <viewControllerLayoutGuide type="bottom" id="POQ-5q-Xts"/>
@@ -166,13 +183,21 @@ East Palo Alto, CA 94303</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lots for rent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdM-ua-RSo">
-                                <rect key="frame" x="143" y="417" width="89" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="vacant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSf-9d-kp1">
+                                <rect key="frame" x="154" y="409" width="51" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN6-Yd-uPj">
+                                <rect key="frame" x="136" y="532" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="buy"/>
+                                <connections>
+                                    <action selector="buy:" destination="xFD-2G-Rcm" eventType="touchUpInside" id="UlW-fE-nuy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
