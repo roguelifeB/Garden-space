@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class CustomTableViewController: UITableViewController {
+    
+    var ref: FIRDatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.ref = FIRDatabase.database().reference()
+        
+        self.ref.child("greenSpaces").observeSingleEvent(of: .value, with: {
+            snapshot in
+            
+            print(snapshot)
+        })
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,5 +1,6 @@
 platform :ios, '7.0'
 
 target 'Template' do
-       pod 'Firebase'
+       pod 'Firebase/Core'
+       pod 'Firebase/Database'
 end

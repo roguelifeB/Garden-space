@@ -6,23 +6,23 @@
 	<dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Template.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>12D0BE9AB489DA96C874BA686EAC1EEE</key>
+		<key>4DDD960B7B7C5B31211FCCF447B25BBB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19A5CA2818C3D68368B8BF3469E98E02</key>
+		<key>E1BBB76ADBF2EF4EF2CE5DF6BBC77296</key>
 		<dict>
 			<key>primary</key>
 			<true/>
