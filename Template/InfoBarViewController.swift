@@ -1,33 +1,24 @@
 //
-//  CustomTableViewController.swift
+//  InfoBarViewController.swift
 //  Template
 //
-//  Created by Mateo Garcia on 4/4/17.
+//  Created by StreetCode Academy on 4/26/17.
 //  Copyright © 2017 StreetCode. All rights reserved.
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
 
-class CustomTableViewController: UITableViewController {
+class InfoBarViewController: UITableViewController {
     
-    var ref: FIRDatabaseReference!
-    var greenSpaces = [[String : Any]]()
-
+    var options: [String] = ["purpose", "Recipes", "menu","farmer almanac","what,why,where to grow"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.ref = FIRDatabase.database().reference()
-        
-        //grabs all greenSpace objects and puts them in greenSpaces array
-        self.ref.child("greenSpaces").observeSingleEvent(of: .value, with: {
-            snapshot in
-            
-            while let obj = snapshot.children.nextObject() as? FIRDataSnapshot {
-                let dict = [ "description": obj.childSnapshot(forPath:  "description")]
-                self.greenSpaces.append(dict)
-            }
-        })
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,17 +35,19 @@ class CustomTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return greenSpaces.count
+        return options.count
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
-        let greenSpace = greenSpaces[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = options[indexPath.row]
 
-        cell.descriptionLabel.text = greenSpace["description"] as? String
-        
+        // Configure the cell...
+
         return cell
     }
+ 
 
     /*
     // Override to support conditional editing of the table view.
