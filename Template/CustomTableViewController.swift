@@ -13,7 +13,8 @@ import FirebaseDatabase
 class CustomTableViewController: UITableViewController {
     
     var ref: FIRDatabaseReference!
-    var greenSpaces = [[String : Any]]()
+    
+    var greenSpaces = [GreenSpace]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +24,41 @@ class CustomTableViewController: UITableViewController {
         self.ref.child("greenSpaces").observeSingleEvent(of: .childAdded, with: {
             snapshot in
             
+            var dict = [String: Any]();
+            
+            let enumerator = snapshot.children
+            while let rest = enumerator.nextObject() as? FIRDataSnapshot {
+                let key = rest.key;
+                let value = rest.value!;
+                
+                dict[key] = value;
+                
+            }
+            
+            let id = "tst";
+            let greenSpace = GreenSpace(id: id, dictionary: dict as AnyObject)
+            self.greenSpaces.append(greenSpace)
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
             //while let obj = snapshot.children.nextObject() as? FIRDataSnapshot {
                 //let dict = [ "description": obj.childSnapshot(forPath:  "description")]
-                let dict = [ "description": snapshot(forPath:  "description")]
-                self.greenSpaces.append(dict)
-                DispatchQueue.main.async {
-                   self.tableView.reloadData()
-                }
+            
+            
+
+            
+                /*
+ propertyPhotoUrl = dictionary.object(forKey: "propertyPhoto") as? String
+ address = dictionary.object(forKey: "address") as? String
+ phonenumber = dictionary.object(forKey: "phonenumber") as? String
+ email = dictionary.object(forKey: "email") as? String
+ squareFeet = dictionary.object(forKey: "squareFeet") as? Double
+ cost = dictionary.object(forKey: "cost") as? Double
+ 
+*/
+
             //}
         })
     }
@@ -55,8 +84,7 @@ class CustomTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
         let greenSpace = greenSpaces[indexPath.row]
 
-        cell.descriptionLabel.text = greenSpace["description"] as? String
-        
+        cell.descriptionLabel.text = greenSpace.address
         return cell
     }
 

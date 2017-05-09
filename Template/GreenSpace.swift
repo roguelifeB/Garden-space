@@ -13,6 +13,7 @@ class GreenSpace {
     var propertyPhotoUrl: String?
     var address: String?
     var phonenumber: String?
+    var isForSale: Bool?
     var email: String?
     var squareFeet: Double?
     var cost: Double?
@@ -24,6 +25,9 @@ class GreenSpace {
         email = dictionary.object(forKey: "email") as? String
         squareFeet = dictionary.object(forKey: "squareFeet") as? Double
         cost = dictionary.object(forKey: "cost") as? Double
+        isForSale = dictionary.object(forKey: "isForSale") as? Bool
         
     }
 }
+
+
