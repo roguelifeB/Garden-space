@@ -20,13 +20,17 @@ class CustomTableViewController: UITableViewController {
         self.ref = FIRDatabase.database().reference()
         
         //grabs all greenSpace objects and puts them in greenSpaces array
-        self.ref.child("greenSpaces").observeSingleEvent(of: .value, with: {
+        self.ref.child("greenSpaces").observeSingleEvent(of: .childAdded, with: {
             snapshot in
             
-            while let obj = snapshot.children.nextObject() as? FIRDataSnapshot {
-                let dict = [ "description": obj.childSnapshot(forPath:  "description")]
+            //while let obj = snapshot.children.nextObject() as? FIRDataSnapshot {
+                //let dict = [ "description": obj.childSnapshot(forPath:  "description")]
+                let dict = [ "description": snapshot(forPath:  "description")]
                 self.greenSpaces.append(dict)
-            }
+                DispatchQueue.main.async {
+                   self.tableView.reloadData()
+                }
+            //}
         })
     }
 

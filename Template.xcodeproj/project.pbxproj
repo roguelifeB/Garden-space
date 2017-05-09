@@ -12,6 +12,7 @@
 		256DD3D51E93A89200DC5D31 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D41E93A89200DC5D31 /* CustomCollectionViewController.swift */; };
 		256DD3D71E93A97C00DC5D31 /* CustomMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */; };
 		256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */; };
+		5D0065871EBAC9E900B3D3F5 /* GreenSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0065861EBAC9E900B3D3F5 /* GreenSpace.swift */; };
 		5D5E71631EB193BB003D1462 /* InfoBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5E71621EB193BB003D1462 /* InfoBarViewController.swift */; };
 		5DEA978E1E9C7C57005FBDDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DEA978D1E9C7C57005FBDDC /* GoogleService-Info.plist */; };
 		5DEA97901EA86070005FBDDC /* lotsForRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA978F1EA86070005FBDDC /* lotsForRent.swift */; };
@@ -29,6 +30,7 @@
 		256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapViewController.swift; sourceTree = "<group>"; };
 		256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FADCD9AB830D9394A43AA7C /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Pods/Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
+		5D0065861EBAC9E900B3D3F5 /* GreenSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenSpace.swift; sourceTree = "<group>"; };
 		5D5E71621EB193BB003D1462 /* InfoBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoBarViewController.swift; sourceTree = "<group>"; };
 		5DEA978D1E9C7C57005FBDDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5DEA978F1EA86070005FBDDC /* lotsForRent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lotsForRent.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				A56203DC1E933FEA00122BDB /* LaunchScreen.storyboard */,
 				5DEA978D1E9C7C57005FBDDC /* GoogleService-Info.plist */,
 				A56203DF1E933FEA00122BDB /* Info.plist */,
+				5D0065861EBAC9E900B3D3F5 /* GreenSpace.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */,
 				256DD3D31E93A84100DC5D31 /* CustomTableViewController.swift in Sources */,
 				5DEA97901EA86070005FBDDC /* lotsForRent.swift in Sources */,
+				5D0065871EBAC9E900B3D3F5 /* GreenSpace.swift in Sources */,
 				A56203D41E933FEA00122BDB /* AppDelegate.swift in Sources */,
 				256DD3D51E93A89200DC5D31 /* CustomCollectionViewController.swift in Sources */,
 				5D5E71631EB193BB003D1462 /* InfoBarViewController.swift in Sources */,
