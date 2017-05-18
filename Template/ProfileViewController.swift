@@ -2,7 +2,7 @@
 //  ProfileViewController.swift
 //  Template
 //
-//  Created by StreetCode Academy on 5/10/17.
+//  Created by Bradon Harris on 5/10/17.
 //  Copyright © 2017 StreetCode. All rights reserved.
 //
 
@@ -11,6 +11,10 @@ import UIKit
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBAction func produceUpload(_ sender: Any) {
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "creationPage")
+        self.navigationController?.pushViewController(secondViewController!, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate=self

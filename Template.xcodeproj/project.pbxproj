@@ -14,6 +14,8 @@
 		256DD3D91E93AD1800DC5D31 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256DD3D81E93AD1800DC5D31 /* CustomCollectionViewCell.swift */; };
 		5D0065871EBAC9E900B3D3F5 /* GreenSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0065861EBAC9E900B3D3F5 /* GreenSpace.swift */; };
 		5D5E71631EB193BB003D1462 /* InfoBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5E71621EB193BB003D1462 /* InfoBarViewController.swift */; };
+		5DAAE9141ECD4079007FB3AA /* glamorous-assorted-apples-pictures-hd-wallpaper-hd-pictures.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DAAE9131ECD4079007FB3AA /* glamorous-assorted-apples-pictures-hd-wallpaper-hd-pictures.jpg */; };
+		5DAAE9161ECD417C007FB3AA /* strawberries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DAAE9151ECD417C007FB3AA /* strawberries.jpg */; };
 		5DC684A61EC40BFF009CBEF2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC684A51EC40BFF009CBEF2 /* ProfileViewController.swift */; };
 		5DC684A81EC40EF8009CBEF2 /* ProduceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC684A71EC40EF8009CBEF2 /* ProduceCollectionViewCell.swift */; };
 		5DEA978E1E9C7C57005FBDDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DEA978D1E9C7C57005FBDDC /* GoogleService-Info.plist */; };
@@ -34,6 +36,8 @@
 		2FADCD9AB830D9394A43AA7C /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Pods/Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
 		5D0065861EBAC9E900B3D3F5 /* GreenSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenSpace.swift; sourceTree = "<group>"; };
 		5D5E71621EB193BB003D1462 /* InfoBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoBarViewController.swift; sourceTree = "<group>"; };
+		5DAAE9131ECD4079007FB3AA /* glamorous-assorted-apples-pictures-hd-wallpaper-hd-pictures.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "glamorous-assorted-apples-pictures-hd-wallpaper-hd-pictures.jpg"; sourceTree = "<group>"; };
+		5DAAE9151ECD417C007FB3AA /* strawberries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = strawberries.jpg; sourceTree = "<group>"; };
 		5DC684A51EC40BFF009CBEF2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5DC684A71EC40EF8009CBEF2 /* ProduceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProduceCollectionViewCell.swift; sourceTree = "<group>"; };
 		5DEA978D1E9C7C57005FBDDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				256DD3D01E93A82300DC5D31 /* CustomTableViewCell.swift */,
 				256DD3D61E93A97C00DC5D31 /* CustomMapViewController.swift */,
 				A56203DA1E933FEA00122BDB /* Assets.xcassets */,
+				5DAAE9151ECD417C007FB3AA /* strawberries.jpg */,
+				5DAAE9131ECD4079007FB3AA /* glamorous-assorted-apples-pictures-hd-wallpaper-hd-pictures.jpg */,
 				A56203DC1E933FEA00122BDB /* LaunchScreen.storyboard */,
 				5DEA978D1E9C7C57005FBDDC /* GoogleService-Info.plist */,
 				A56203DF1E933FEA00122BDB /* Info.plist */,
@@ -182,6 +188,8 @@
 			files = (
 				A56203DE1E933FEA00122BDB /* LaunchScreen.storyboard in Resources */,
 				A56203DB1E933FEA00122BDB /* Assets.xcassets in Resources */,
+				5DAAE9161ECD417C007FB3AA /* strawberries.jpg in Resources */,
+				5DAAE9141ECD4079007FB3AA /* glamorous-assorted-apples-pictures-hd-wallpaper-hd-pictures.jpg in Resources */,
 				5DEA978E1E9C7C57005FBDDC /* GoogleService-Info.plist in Resources */,
 				A56203D91E933FEA00122BDB /* Main.storyboard in Resources */,
 			);

@@ -77,14 +77,24 @@ class CustomTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return greenSpaces.count
+        // return greenSpaces.count
+        return 5
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
-        let greenSpace = greenSpaces[indexPath.row]
+       // let greenSpace = greenSpaces[indexPath.row]
 
-        cell.descriptionLabel.text = greenSpace.address
+       // cell.descriptionLabel.text = greenSpace.address
+        if indexPath.row==1{
+            cell.descriptionLabel.text="City Growers"
+            cell.photoImageView.image=UIImage(named:"tomatos")!
+        }
+        if indexPath.row==2{
+            cell.descriptionLabel.text="town produce"
+            cell.photoImageView.image=UIImage(named:"tomatos")!
+        }
+        
         return cell
     }
 
