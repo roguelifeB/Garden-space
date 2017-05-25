@@ -78,7 +78,7 @@ class CustomTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         // return greenSpaces.count
-        return 5
+        return 6
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -86,14 +86,38 @@ class CustomTableViewController: UITableViewController {
        // let greenSpace = greenSpaces[indexPath.row]
 
        // cell.descriptionLabel.text = greenSpace.address
+        if indexPath.row==0{
+            cell.descriptionLabel.text="community garden"
+            cell.areaLabel.text="corn"
+            cell.photoImageView.image=UIImage(named:"corn")!
+        }
+
         if indexPath.row==1{
             cell.descriptionLabel.text="City Growers"
-            cell.photoImageView.image=UIImage(named:"tomatos")!
+            cell.areaLabel.text="strawberries"
+            cell.photoImageView.image=UIImage(named:"strawberries")!
         }
         if indexPath.row==2{
             cell.descriptionLabel.text="town produce"
+            cell.areaLabel.text="tomatos"
             cell.photoImageView.image=UIImage(named:"tomatos")!
         }
+        if indexPath.row==3{
+            cell.descriptionLabel.text="cool farms"
+            cell.areaLabel.text="oranges"
+            cell.photoImageView.image=UIImage(named:"oranges")!
+        }
+        if indexPath.row==4{
+            cell.descriptionLabel.text="urban bloomers"
+            cell.areaLabel.text="plums"
+            cell.photoImageView.image=UIImage(named:"plums")!
+        }
+        if indexPath.row==5{
+            cell.descriptionLabel.text="town sprouts"
+            cell.areaLabel.text="apples"
+            cell.photoImageView.image=UIImage(named:"apples")!
+        }
+        
         
         return cell
     }
