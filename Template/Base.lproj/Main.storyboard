@@ -247,7 +247,7 @@
                             <outlet property="delegate" destination="PNb-Ta-M3H" id="yCa-UF-lQo"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="daily grabs" image="HomeIcon" id="HRq-22-j6d"/>
+                    <tabBarItem key="tabBarItem" title="daily grabs" image="home" id="HRq-22-j6d"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCk-PS-SNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,12 +290,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="91" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tomatos" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-RB-82V">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tomatos" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-RB-82V">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="83"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="produceImageView" destination="Rs5-RB-82V" id="eg6-OD-EWT"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -321,7 +324,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="profile" id="mgL-IO-jIi"/>
+                    <tabBarItem key="tabBarItem" title="profile" image="ProfileIcon" id="mgL-IO-jIi"/>
                     <connections>
                         <outlet property="collectionView" destination="rEO-Jv-vmP" id="S0F-7f-0XY"/>
                     </connections>
@@ -547,7 +550,9 @@ East Palo Alto, CA 94303</string>
         <image name="HomeIcon" width="50" height="50"/>
         <image name="MapIcon" width="50" height="50"/>
         <image name="MyLocationIcon" width="60" height="60"/>
+        <image name="ProfileIcon" width="50" height="50"/>
         <image name="glamorous-assorted-apples-pictures-hd-wallpaper-hd-pictures.jpg" width="2560" height="1600"/>
+        <image name="home" width="50" height="50"/>
         <image name="img1-300x240" width="300" height="240"/>
         <image name="plums" width="1600" height="1067"/>
         <image name="strawberries.jpg" width="273" height="184"/>

@@ -30,6 +30,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     // MARK: UICollectionViewDataSource
     
+    
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 8
@@ -43,7 +44,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "profileProduceCell", for: indexPath) as! ProduceCollectionViewCell
-        
+        let fruitnum=(indexPath.section*3+indexPath.item)%4
+        cell.produceImageView.image=UIImage(named:"fruit"+String(fruitnum))
         // Configure the cell
         
         return cell
